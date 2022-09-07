@@ -1,0 +1,21 @@
+.Footer_container {
+  color: white;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icons a img {
+  filter: invert(100%);
+  width: 40px;
+  height: 40px;
+  margin: 0 6px;
+}
+
+.icons a img:hover {
+  opacity: 0.7;
+}

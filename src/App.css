@@ -1,0 +1,35 @@
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+.Nav {
+  color: white;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  min-height: 10vh;
+  gap: 0.3rem;
+}
+
+.Button {
+  display: flex;
+  font-size: 1.25rem;
+  padding: 0.75rem;
+  color: white;
+  background-color: #282c34;
+  border: 0;
+}
+
+.Button:hover {
+  color: #e0aaff;
+  transform: translateY(-1px);
+}
