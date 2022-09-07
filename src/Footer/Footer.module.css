@@ -6,7 +6,7 @@
 .icons {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
 }
 
 .icons a img {

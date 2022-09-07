@@ -1,5 +1,7 @@
 import styles from "./Welcome.module.css";
 
+import Footer from "../Footer/Footer";
+
 export default function Welcome() {
   return (
     <div className={styles.Intro_container}>
@@ -17,6 +19,7 @@ export default function Welcome() {
         <h1>Jason Hsu</h1>
         <h3>Software Developer / Student</h3>
         <h4>Glad you could stop by</h4>
+        <Footer />
       </div>
     </div>
   );

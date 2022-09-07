@@ -1,0 +1,18 @@
+.Projects_container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.Project_row {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+}
+
+.Project_box {
+  background-color: blueviolet;
+  padding: 0.5rem 1.5rem;
+  width: 50%;
+}

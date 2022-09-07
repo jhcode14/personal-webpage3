@@ -5,9 +5,7 @@ import "./App.css";
 import Welcome from "./Welcome/Welcome";
 import About from "./About/About";
 import Projects from "./Projects/Projects";
-import Resume from "./Resume/Resume";
-import Contact from "./Contact/Contact";
-import Footer from "./Footer/Footer";
+import Experience from "./Experience/Experience";
 
 function App() {
   const [visiblePage, setVisiblePage] = useState(<Welcome />);
@@ -23,11 +21,8 @@ function App() {
       case "PAGE_PROJECTS":
         setVisiblePage(<Projects />);
         break;
-      case "PAGE_RESUME":
-        setVisiblePage(<Resume />);
-        break;
-      case "PAGE_CONTACT":
-        setVisiblePage(<Contact />);
+      case "PAGE_EXPERIENCE":
+        setVisiblePage(<Experience />);
         break;
       default:
         break;
@@ -59,22 +54,14 @@ function App() {
             Projects
           </button>
           <button
-            value="PAGE_RESUME"
+            value="PAGE_EXPERIENCE"
             onClick={handleNavButton}
             className="Button"
           >
-            Resume
-          </button>
-          <button
-            value="PAGE_CONTACT"
-            onClick={handleNavButton}
-            className="Button"
-          >
-            Contact
+            Experience
           </button>
         </div>
         {visiblePage}
-        <Footer />
       </div>
     </div>
   );
