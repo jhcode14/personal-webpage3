@@ -1,8 +1,9 @@
 Todo:
 
-- fix profile img
-- design each tab
 - color picking
+- CSS/Design Improvement
+
+- fix nav bar redirection (scroll down)
 
 Resource:
 

@@ -1,3 +1,21 @@
 .About_container {
-  color: white;
+  color: black;
+  background-color: white;
+
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+.About_container h1 {
+  font-size: 700%;
+  opacity: 50%;
+  margin-top: 0em;
+}
+
+.About_container p {
+  font-size: 150%;
 }

@@ -14,7 +14,7 @@ const all_data = [
     link: "",
     skills: "React.JS, JS/HTML/CSS",
     context:
-      "This is the third and latest version of my website, hope you liked it :)",
+      "This project is the website you are viewing right now. This is the third and latest version of my website, intended to feature myself and some of my proud works. Hope you liked it.",
   },
   {
     title: "Heart Disease Detection with Machine Learning",

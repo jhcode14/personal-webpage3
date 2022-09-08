@@ -1,67 +1,45 @@
-import { useState, useEffect } from "react";
-
 import "./App.css";
 
 import Welcome from "./Welcome/Welcome";
 import About from "./About/About";
 import Projects from "./Projects/Projects";
 import Experience from "./Experience/Experience";
+import Footer from "./Footer/Footer";
 
 function App() {
-  const [visiblePage, setVisiblePage] = useState(<Welcome />);
-
-  const handleNavButton = (e) => {
-    switch (e.target.value) {
-      case "PAGE_WELCOME":
-        setVisiblePage(<Welcome />);
-        break;
-      case "PAGE_ABOUT_ME":
-        setVisiblePage(<About />);
-        break;
-      case "PAGE_PROJECTS":
-        setVisiblePage(<Projects />);
-        break;
-      case "PAGE_EXPERIENCE":
-        setVisiblePage(<Experience />);
-        break;
-      default:
-        break;
-    }
-  };
   return (
     <div className="App">
       <div className="Container">
         <div className="Nav">
-          <button
-            value="PAGE_WELCOME"
-            onClick={handleNavButton}
-            className="Button"
-          >
-            Welcome
-          </button>
-          <button
-            value="PAGE_ABOUT_ME"
-            onClick={handleNavButton}
-            className="Button"
-          >
-            About
-          </button>
-          <button
-            value="PAGE_PROJECTS"
-            onClick={handleNavButton}
-            className="Button"
-          >
-            Projects
-          </button>
-          <button
-            value="PAGE_EXPERIENCE"
-            onClick={handleNavButton}
-            className="Button"
-          >
-            Experience
-          </button>
+          <img
+            src={process.env.PUBLIC_URL + "catcon.png"}
+            alt="Logo"
+            width={64}
+            height={64}
+          />
+          <div className="Nav_content">
+            <button value="PAGE_ABOUT_ME" className="Button">
+              About
+            </button>
+            <button value="PAGE_PROJECTS" className="Button">
+              Projects
+            </button>
+            <button value="PAGE_EXPERIENCE" className="Button">
+              Experience
+            </button>
+            <button value="PAGE_WELCOME" className="Button">
+              Contact Me
+            </button>
+          </div>
         </div>
-        {visiblePage}
+        <Welcome />
+        <About />
+        <Projects />
+        <Experience />
+        <div className="Footer">
+          <h1>Contact</h1>
+          <Footer />
+        </div>
       </div>
     </div>
   );

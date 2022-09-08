@@ -44,8 +44,6 @@ export default function Experience() {
         >
           View Resume
         </a>
-        <h1>Contact</h1>
-        <Footer />
       </div>
     </div>
   );

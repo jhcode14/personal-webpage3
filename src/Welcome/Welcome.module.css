@@ -1,13 +1,18 @@
 .Intro_container {
+  background-color: #160040;
+
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  padding-left: 10em;
+  padding-right: 10em;
 }
 
 .Intro {
   color: white;
   flex: 1 1;
-  padding-left: 10vw;
+  align-items: left;
 }
 
 .Intro h1 {
@@ -36,4 +41,6 @@
   flex: 1 1;
   height: 100%;
   width: 100%;
+
+  text-align: right;
 }
