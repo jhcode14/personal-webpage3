@@ -1,5 +1,7 @@
 Todo:
 
+- Fix css addressed
+- add a scroll down flashing thing
 - color picking
 - CSS/Design Improvement
 

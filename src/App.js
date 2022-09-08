@@ -6,18 +6,15 @@ import Projects from "./Projects/Projects";
 import Experience from "./Experience/Experience";
 import Contact from "./Contact/Contact";
 
+import Catlogo from "./Img/catcon.png";
+
 function App() {
   return (
     <div className="App">
       <div className="Container">
         <div className="Nav">
           <div className="Icon">
-            <img
-              src={process.env.PUBLIC_URL + "catcon.png"}
-              alt="Logo"
-              width={64}
-              height={64}
-            />
+            <img src={Catlogo} alt="Logo" width={64} height={64} />
           </div>
           <div className="Nav_content">
             <button value="PAGE_ABOUT_ME" className="Button">
