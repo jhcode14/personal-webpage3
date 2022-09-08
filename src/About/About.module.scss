@@ -1,8 +1,7 @@
-$color1: #160040;
-$color2: white;
+@import "../theme.scss";
 
 .About_container {
-  color: $color2;
+  color: $bg-color;
   background-color: $color1;
 
   display: flex;
@@ -13,11 +12,11 @@ $color2: white;
 }
 
 .About_container h1 {
-  font-size: 700%;
-  opacity: 50%;
+  font-size: $bg-size-1;
+  opacity: $font-opacity;
   margin-top: 0em;
 }
 
 .About_container p {
-  font-size: 150%;
+  font-size: $size-3;
 }

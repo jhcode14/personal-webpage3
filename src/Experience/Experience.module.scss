@@ -1,42 +1,27 @@
-$color1: #5a189a;
-$color2: white;
+@import "../theme.scss";
 
 .Experience_container {
-  color: $color2;
-
-  display: flex;
-  flex-direction: row;
-  gap: 2em;
+  color: $bg-color;
 
   padding: 2.5em 10em;
+}
+
+.Experience_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.Experience_container h1 {
+  color: $color1;
+  font-size: $bg-size-2;
+  opacity: $font-opacity;
+
+  margin-top: 0;
 }
 
 .Boxes {
   display: flex;
   flex-direction: column;
-  width: 50%;
-}
-
-.Boxes h1 {
-  color: $color1;
-}
-
-.Text_container {
-  color: $color1;
-  display: flex;
-  flex-direction: column;
-}
-
-.download_button {
-  color: $color1;
-  background-color: color2;
-  border: 2px solid $color1;
-  width: 10rem;
-  padding: 1rem;
-  text-align: center;
-  text-decoration: none;
-  font-family: "ibm-plex-mono", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2em;
+  gap: 0.5rem;
 }

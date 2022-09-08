@@ -1,8 +1,7 @@
-$color1: #160040;
-$color2: white;
+@import "../theme.scss";
 
 .Intro_container {
-  background-color: $color2;
+  background-color: $bg-color;
 
   display: flex;
   flex-direction: row;
@@ -22,28 +21,36 @@ $color2: white;
 
 .Intro h1 {
   color: $color1;
-  font-family: verdana;
-  font-size: 400%;
+  font-family: $font;
+  font-size: $size-1;
 }
 .Intro h2 {
   color: $color1;
-  font-family: verdana;
-  font-size: 280%;
+  font-family: $font;
+  font-size: $size-2;
 }
 .Intro h3 {
   color: $color1;
-  font-family: verdana;
-  font-size: 150%;
+  font-family: $font;
+  font-size: $size-3;
 }
 .Intro h4 {
   color: $color1;
-  font-family: verdana;
-  font-size: 150%;
+  font-family: $font;
+  font-size: $size-3;
 }
 
 .Profile_pic {
-  display: block;
+  display: flex;
   flex: 1 1;
   height: 100%;
   width: 100%;
+
+  justify-content: flex-end;
+}
+
+.Profile_pic img {
+  margin-top: auto;
+  width: auto;
+  height: 90%;
 }

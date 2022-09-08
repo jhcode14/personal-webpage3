@@ -1,9 +1,11 @@
-$color1: #5a189a;
-$color2: white;
+@import "../theme.scss";
 
-.Footer {
-  color: $color1;
-
+.Contact_container {
   padding-left: 10em;
   padding-right: 10em;
+}
+
+.Contact_container h1 {
+  color: $color1;
+  font-size: $size-2;
 }

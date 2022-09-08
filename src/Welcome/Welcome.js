@@ -14,7 +14,7 @@ export default function Welcome() {
         <Footer />
       </div>
       <div className={styles.Profile_pic}>
-        <img src={Kendo} alt="" width={381} height={703} />
+        <img src={Kendo} alt="" />
       </div>
     </div>
   );

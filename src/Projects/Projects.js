@@ -6,74 +6,49 @@ const all_data = [
     link: "",
     skills: "Next.JS, MongoDB, JS/HTML/CSS, Docker, Kubernetes",
     context:
-      "This is intended to be a self hosted project on the home network. Users will be able to track specific stocks and be notified through an interactive website and Sonos Home Speaker system. I am excited to show you this when it is ready!",
+      "This is a project for the home network. Users will self-host the application locally to track specific stocks and interact with the app through its website and Sonos Home Speaker system.",
   },
   {
-    title: "This Website!",
+    title: "Jason Hsu's Website",
     link: "",
     skills: "React.JS, JS/HTML/CSS",
     context:
-      "This project is the website you are viewing right now. This is the third and latest version of my website, intended to feature myself and some of my proud works. Hope you liked it.",
+      "This project is the website you are viewing right now. This website is the third and latest version, intended to feature some of my proud works.",
   },
   {
-    title: "Heart Disease Detection with Machine Learning",
+    title: "Heart Disease Detection",
     link: "https://github.com/jhcode14/Heart_Disease_ML_Detection",
     skills: "Python, Pandas, Numpy, Sklearn",
     context:
-      "This is the final project of UCSD's COGS 118A Supervised Machine Learning Course. We intend to evaluate the risk of a patient getting a heart disease through multiple Machine Learning modles.",
+      "This is the final project of UCSD's COGS 118A Supervised Machine Learning Course. We intend to evaluate a patient's risk of getting heart disease through multiple Machine Learning models.",
   },
   {
     title: "Type 1 Diabetes Care Directive",
     link: "https://github.com/jhcode14/t1d-fall2021",
     skills: "React.JS, JS/HTML/CSS",
     context:
-      "As a member of the UC San Diego Diabetes Design Initiative, I worked with teammates to create this React.JS app to create a safer and mroe effecient communication between doctors and Type1 Diabetes patients in an emergency situation.",
+      "As a developer of the UC San Diego Diabetes Design Initiative, I worked with teammates to create this React.JS app to create safer and more efficient communication between doctors and Type1 Diabetes patients in an emergency.",
   },
 ];
 
-export default function Projects() {
+export default function Projects({ ref }) {
   return (
-    <div className={styles.Projects_container}>
+    <div className={styles.Projects_container} ref={ref}>
       <h1>Project Highlights</h1>
-      <div className={styles.Project_row}>
-        <div className={styles.Project_box}>
-          <h3>{all_data[0].title}</h3>
-          <p>
-            {all_data[0].skills}
-            <br />
-            <br />
-            {all_data[0].context}
-          </p>
-        </div>
-        <div className={styles.Project_box}>
-          <h3>{all_data[1].title}</h3>
-          <p>
-            {all_data[1].skills}
-            <br />
-            <br />
-            {all_data[1].context}
-          </p>
-        </div>
-      </div>
-      <div className={styles.Project_row}>
-        <div className={styles.Project_box}>
-          <h3>{all_data[2].title}</h3>
-          <p>
-            {all_data[2].skills}
-            <br />
-            <br />
-            {all_data[2].context}
-          </p>
-        </div>
-        <div className={styles.Project_box}>
-          <h3>{all_data[3].title}</h3>
-          <p>
-            {all_data[3].skills}
-            <br />
-            <br />
-            {all_data[3].context}
-          </p>
-        </div>
+      <div className={styles.Project_display}>
+        {all_data.map((proj) => (
+          <div className={styles.Project_box}>
+            <a href={proj.link}>
+              <h3>{proj.title}</h3>
+              <p>
+                {proj.skills}
+                <br />
+                <br />
+                {proj.context}
+              </p>
+            </a>
+          </div>
+        ))}
       </div>
     </div>
   );

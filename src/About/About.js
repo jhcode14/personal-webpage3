@@ -1,8 +1,9 @@
+import { forwardRef } from "react";
 import styles from "./About.module.scss";
 
-export default function About() {
+const About = forwardRef((props, ref) => {
   return (
-    <div className={styles.About_container}>
+    <div className={styles.About_container} ref={ref}>
       <h1>I&apos;m</h1>
       <p>
         A Software Developer located in the United States. Currently studying
@@ -24,4 +25,6 @@ export default function About() {
       </p>
     </div>
   );
-}
+});
+
+export default About;

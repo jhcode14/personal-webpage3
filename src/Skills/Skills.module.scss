@@ -1,0 +1,60 @@
+@import "../theme.scss";
+
+.Skills_container {
+  background-color: antiquewhite;
+  padding: 2.5em 10em;
+}
+
+.Skills_container h1 {
+  color: $color1;
+  opacity: $font-opacity;
+
+  font-size: $bg-size-2;
+
+  margin: 0;
+}
+
+.Skills_container h2 {
+  color: $color2;
+  font-size: $size-3;
+
+  text-align: right;
+}
+
+.Skills_list {
+  justify-content: right;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  gap: 0.3rem;
+}
+
+.Skills_box h3 {
+  color: $color1;
+  background-color: $bg-color;
+
+  border-radius: 2.5rem;
+
+  padding: 1rem 0.7rem;
+  margin: 0 0;
+}
+
+.Resume_box {
+  display: flex;
+  justify-content: right;
+  padding-top: 2rem;
+}
+
+.Resume_box a {
+  color: $bg-color;
+  background-color: $color2;
+  border-radius: 0.8rem;
+  width: 10rem;
+  padding: 0.7rem;
+  text-align: center;
+  text-decoration: none;
+  font-family: $font;
+  font-size: $size-3;
+}

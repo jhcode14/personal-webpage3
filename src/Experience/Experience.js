@@ -18,31 +18,15 @@ const all_data = [
   },
 ];
 
-export default function Experience() {
+export default function Experience({ ref }) {
   return (
-    <div className={styles.Experience_container}>
-      <div className={styles.Boxes}>
+    <div className={styles.Experience_container} ref={ref}>
+      <div className={styles.Experience_grid}>
         <h1>Experiences</h1>
-        <Box data={all_data[0]} />
-        <Box data={all_data[1]} />
-      </div>
-      <div className={styles.Text_container}>
-        <h1>Skills</h1>
-        <p>
-          Proficient Languages: Python, JavaScript/HTML/CSS
-          <br />
-          Technologies: Docker, Kubernetes, React.JS, Next.JS, Linux, Git
-          <br />
-          Methodologies: Agile, Scrum
-        </p>
-        <h1>Resume</h1>
-        <a
-          className={styles.download_button}
-          href="/Jason-Resume-September-2022.pdf"
-          download
-        >
-          View Resume
-        </a>
+        <div className={styles.Boxes}>
+          <Box data={all_data[0]} />
+          <Box data={all_data[1]} />
+        </div>
       </div>
     </div>
   );

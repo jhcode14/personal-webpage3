@@ -1,4 +1,4 @@
-import styles from "./Box.module.css";
+import styles from "./Box.module.scss";
 
 /**
  * Takes in data with format:
