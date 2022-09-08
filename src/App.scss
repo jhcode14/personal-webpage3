@@ -1,5 +1,9 @@
+$color1: #160040;
+$color2: white;
+$color3: #e0aaff;
+
 .App {
-  background-color: #160040;
+  background-color: $color2;
   min-height: 100vh;
   width: 100vw;
 
@@ -20,8 +24,14 @@
   padding-right: 10em;
 }
 
+.Icon {
+  height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .Nav_content {
-  color: white;
+  color: $color2;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -34,19 +44,12 @@
   display: flex;
   font-size: 1.25rem;
   padding: 0.75rem;
-  color: white;
-  background-color: #160040;
+  color: $color1;
+  background-color: $color2;
   border: 0;
 }
 
 .Button:hover {
-  color: #e0aaff;
+  color: $color3;
   transform: translateY(-1px);
-}
-
-.Footer {
-  color: white;
-
-  padding-left: 10em;
-  padding-right: 10em;
 }

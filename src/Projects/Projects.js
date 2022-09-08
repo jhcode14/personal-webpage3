@@ -1,5 +1,4 @@
-import styles from "./Projects.module.css";
-import Box from "../Box/Box";
+import styles from "./Projects.module.scss";
 
 const all_data = [
   {

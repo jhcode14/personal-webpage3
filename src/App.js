@@ -1,22 +1,24 @@
-import "./App.css";
+import "./App.scss";
 
 import Welcome from "./Welcome/Welcome";
 import About from "./About/About";
 import Projects from "./Projects/Projects";
 import Experience from "./Experience/Experience";
-import Footer from "./Footer/Footer";
+import Contact from "./Contact/Contact";
 
 function App() {
   return (
     <div className="App">
       <div className="Container">
         <div className="Nav">
-          <img
-            src={process.env.PUBLIC_URL + "catcon.png"}
-            alt="Logo"
-            width={64}
-            height={64}
-          />
+          <div className="Icon">
+            <img
+              src={process.env.PUBLIC_URL + "catcon.png"}
+              alt="Logo"
+              width={64}
+              height={64}
+            />
+          </div>
           <div className="Nav_content">
             <button value="PAGE_ABOUT_ME" className="Button">
               About
@@ -36,10 +38,7 @@ function App() {
         <About />
         <Projects />
         <Experience />
-        <div className="Footer">
-          <h1>Contact</h1>
-          <Footer />
-        </div>
+        <Contact />
       </div>
     </div>
   );

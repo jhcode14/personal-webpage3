@@ -1,6 +1,5 @@
-import styles from "./Experience.module.css";
+import styles from "./Experience.module.scss";
 import Box from "../Box/Box";
-import Footer from "../Footer/Footer";
 
 const all_data = [
   {
