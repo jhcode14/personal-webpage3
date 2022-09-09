@@ -59,13 +59,18 @@
     background-size: cover;
     background-position: top center;
     background-attachment: local;
-
-    * {
-      opacity: 100%;
-    }
   }
 
   .Profile_pic img {
     display: none;
+  }
+
+  .Intro h1 {
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+  }
+
+  .Intro h2 {
+    margin-bottom: 0;
   }
 }
