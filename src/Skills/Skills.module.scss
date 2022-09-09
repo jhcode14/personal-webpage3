@@ -45,7 +45,7 @@
 
   &:hover {
     color: $bg-color;
-    background-color: darken($color2, 0%);
+    background-color: lighten($color3, 10%);
     transform: translateY(-1px);
   }
 }
@@ -57,7 +57,7 @@
 
   a {
     color: $bg-color;
-    background-color: $color2;
+    background-color: $color3;
     border-radius: 0.4rem;
     width: 10rem;
     padding: 0.7rem;
@@ -69,7 +69,7 @@
     cursor: pointer;
 
     &:hover {
-      background-color: $color3;
+      background-color: $color4;
     }
   }
 }
