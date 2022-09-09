@@ -1,24 +1,24 @@
 @import "../theme.scss";
 
 .Skills_container {
-  background-color: antiquewhite;
   padding: 2.5em 10em;
-}
+  margin-left: -10rem;
+  margin-right: -10rem;
 
-.Skills_container h1 {
-  color: $color1;
-  opacity: $font-opacity;
+  h1 {
+    color: $color1;
 
-  font-size: $bg-size-2;
+    font-size: $bg-size-2;
 
-  margin: 0;
-}
+    margin: 0;
+  }
 
-.Skills_container h2 {
-  color: $color2;
-  font-size: $size-3;
+  h2 {
+    color: $color2;
+    font-size: $size-3;
 
-  text-align: right;
+    text-align: right;
+  }
 }
 
 .Skills_list {
@@ -35,26 +35,54 @@
   color: $color1;
   background-color: $bg-color;
 
-  border-radius: 2.5rem;
+  border-radius: 0.5rem;
+  border: 1.5px solid #a4b1cd;
 
   padding: 1rem 0.7rem;
   margin: 0 0;
+
+  transition: background-color 0.3s;
+
+  &:hover {
+    color: $bg-color;
+    background-color: darken($color2, 0%);
+    transform: translateY(-1px);
+  }
 }
 
 .Resume_box {
   display: flex;
   justify-content: right;
   padding-top: 2rem;
+
+  a {
+    color: $bg-color;
+    background-color: $color2;
+    border-radius: 0.4rem;
+    width: 10rem;
+    padding: 0.7rem;
+    text-align: center;
+    text-decoration: none;
+    font-family: $font;
+    font-size: $size-3;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color3;
+    }
+  }
 }
 
-.Resume_box a {
-  color: $bg-color;
-  background-color: $color2;
-  border-radius: 0.8rem;
-  width: 10rem;
-  padding: 0.7rem;
-  text-align: center;
-  text-decoration: none;
-  font-family: $font;
-  font-size: $size-3;
+@media only screen and (max-width: 55em) {
+  .Skills_container {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-left: $padding-phone;
+    padding-right: $padding-phone;
+
+    h1 {
+      font-size: $size-phone-title;
+    }
+  }
 }

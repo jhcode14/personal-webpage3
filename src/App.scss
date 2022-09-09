@@ -11,15 +11,15 @@
 .Container {
   display: flex;
   flex-direction: column;
+
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
 .Nav {
   display: flex;
   flex-direction: row;
   min-height: 10vh;
-
-  padding-left: 10em;
-  padding-right: 10em;
 }
 
 .Icon {
@@ -37,18 +37,41 @@
   margin-left: auto;
 
   gap: 0.3rem;
+
+  * {
+    display: flex;
+    font-size: 1.25rem;
+    padding: 0.75rem;
+    color: $color1;
+    text-decoration: none;
+    background-color: $bg-color;
+    border: 0;
+
+    &:hover {
+      color: $color3;
+      transform: translateY(-1px);
+    }
+  }
 }
 
-.Button {
-  display: flex;
-  font-size: 1.25rem;
-  padding: 0.75rem;
-  color: $color1;
-  background-color: $bg-color;
-  border: 0;
-}
-
-.Button:hover {
-  color: $color3;
-  transform: translateY(-1px);
+@media only screen and (max-width: 55em) {
+  .Container {
+    padding: 0;
+  }
+  .Nav {
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+  }
+  .Icon {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .Nav_content {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
 }

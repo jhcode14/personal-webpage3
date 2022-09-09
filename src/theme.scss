@@ -2,15 +2,19 @@ $bg-color: white;
 $color1: #160040;
 $color2: #5a189a;
 $color3: #533483;
-$color4: #e0aaff;
+$color4: lighten($color3, 20%);
 
 $font-opacity: 50%;
 
 $font: Helvetica;
 
-$size-1: 4.5rem;
-$size-2: 2.7rem;
+$size-1: 5.7rem;
+$size-2: 3.7rem;
 $size-3: 1.5rem;
 
 $bg-size-1: 7rem;
 $bg-size-2: 4rem;
+
+$size-phone-title: 3.25rem;
+
+$padding-phone: 0.75rem;

@@ -6,51 +6,56 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-
-  padding-left: 10em;
-  padding-right: 10em;
-
-  height: 90vh;
 }
 
 .Intro {
   color: $color1;
-  flex: 1 1;
   align-items: left;
-}
 
-.Intro h1 {
-  color: $color1;
-  font-family: $font;
-  font-size: $size-1;
-}
-.Intro h2 {
-  color: $color1;
-  font-family: $font;
-  font-size: $size-2;
-}
-.Intro h3 {
-  color: $color1;
-  font-family: $font;
-  font-size: $size-3;
-}
-.Intro h4 {
-  color: $color1;
-  font-family: $font;
-  font-size: $size-3;
+  h1 {
+    color: $color1;
+    font-family: $font;
+    font-size: $size-1;
+  }
+
+  h2 {
+    color: $color1;
+    font-family: $font;
+    font-size: $size-2;
+  }
+
+  h3 {
+    color: $color1;
+    font-family: $font;
+    font-size: $size-3;
+  }
+
+  h4 {
+    color: $color1;
+    font-family: $font;
+    font-size: $size-3;
+  }
 }
 
 .Profile_pic {
+  margin-top: auto;
+  margin-left: auto;
   display: flex;
-  flex: 1 1;
-  height: 100%;
-  width: 100%;
-
-  justify-content: flex-end;
+  min-width: 0rem;
+  max-width: 25rem;
 }
 
 .Profile_pic img {
-  margin-top: auto;
-  width: auto;
-  height: 90%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 55em) {
+  .Intro_container {
+    padding-left: $padding-phone;
+    padding-right: $padding-phone;
+  }
+
+  .Profile_pic img {
+    display: none;
+  }
 }

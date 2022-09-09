@@ -1,12 +1,14 @@
+import { forwardRef } from "react";
 import styles from "./Skills.module.scss";
 const lang = ["Python", "JavaScript", "HTML", "CSS"];
 const tech = ["Docker", "Kubernetes", "React.JS", "Next.JS", "Linux", "Git"];
 const meth = ["Agile", "Scrum"];
-export default function Skills({ ref }) {
+
+const Skills = forwardRef((props, ref) => {
   return (
     <div className={styles.Skills_container} ref={ref}>
       <h1>Skills</h1>
-      <h2>Proficient Languages</h2>
+      <h2>Languages</h2>
       <div className={styles.Skills_list}>
         {lang.map((item) => (
           <div className={styles.Skills_box}>
@@ -32,9 +34,10 @@ export default function Skills({ ref }) {
       </div>
       <div className={styles.Resume_box}>
         <a href="/Jason-Resume-September-2022.pdf" download>
-          View Resume
+          Download Resume
         </a>
       </div>
     </div>
   );
-}
+});
+export default Skills;

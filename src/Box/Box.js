@@ -13,17 +13,22 @@ import styles from "./Box.module.scss";
  *  React component box
  */
 
-export default function Box(data) {
+export default function Box({ data, link }) {
   return (
-    <div className={styles.Box_container}>
-      <h3>{data.data["title"]}</h3>
+    <div
+      className={styles.Box_container}
+      onClick={() => {
+        window.open(link);
+      }}
+    >
+      <h3>{data["title"]}</h3>
       <p>
-        {data.data["title_description"]}
+        {data["title_description"]}
         <br />
-        {data.data["time_period"]}
+        {data["time_period"]}
         <br />
         <br />
-        {data.data["context"]}
+        {data["context"]}
       </p>
       <p></p>
     </div>

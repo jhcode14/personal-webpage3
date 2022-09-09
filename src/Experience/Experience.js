@@ -1,3 +1,4 @@
+import { forwardRef } from "react";
 import styles from "./Experience.module.scss";
 import Box from "../Box/Box";
 
@@ -18,16 +19,24 @@ const all_data = [
   },
 ];
 
-export default function Experience({ ref }) {
+const Experience = forwardRef((props, ref) => {
   return (
     <div className={styles.Experience_container} ref={ref}>
       <div className={styles.Experience_grid}>
         <h1>Experiences</h1>
         <div className={styles.Boxes}>
-          <Box data={all_data[0]} />
-          <Box data={all_data[1]} />
+          <Box
+            data={all_data[0]}
+            link={"https://www.linkedin.com/in/jason-hsu-ucsd/"}
+          />
+          <Box
+            data={all_data[1]}
+            link={"https://www.linkedin.com/in/jason-hsu-ucsd/"}
+          />
         </div>
       </div>
     </div>
   );
-}
+});
+
+export default Experience;

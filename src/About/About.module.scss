@@ -9,14 +9,33 @@
   gap: 4em;
 
   padding: 2.5em 10em;
+  margin-left: -10rem;
+  margin-right: -10rem;
+
+  h1 {
+    font-size: $bg-size-1;
+    opacity: $font-opacity;
+    margin-top: 0em;
+  }
+
+  p {
+    font-size: $size-3;
+  }
 }
 
-.About_container h1 {
-  font-size: $bg-size-1;
-  opacity: $font-opacity;
-  margin-top: 0em;
-}
+@media only screen and (max-width: 55em) {
+  .About_container {
+    flex-direction: column;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
-.About_container p {
-  font-size: $size-3;
+    gap: 0em;
+    font-size: $padding-phone;
+
+    h1 {
+      margin-bottom: 0;
+    }
+  }
 }

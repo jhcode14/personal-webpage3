@@ -2,26 +2,39 @@
 
 .Experience_container {
   color: $bg-color;
+  padding: 2.5em 0em;
 
-  padding: 2.5em 10em;
+  h1 {
+    color: $color1;
+    font-size: $bg-size-2;
+
+    margin-top: 0;
+  }
 }
 
 .Experience_grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-}
-
-.Experience_container h1 {
-  color: $color1;
-  font-size: $bg-size-2;
-  opacity: $font-opacity;
-
-  margin-top: 0;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .Boxes {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 55em) {
+  .Experience_container {
+    margin-left: 0rem;
+    margin-right: 0rem;
+
+    h1 {
+      font-size: $size-phone-title;
+      text-align: center;
+    }
+  }
+
+  .Boxes {
+    padding: 0 0.75rem;
+  }
 }

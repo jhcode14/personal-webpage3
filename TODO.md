@@ -5,6 +5,7 @@ Todo:
 - color picking
 - CSS/Design Improvement
 
+- box shadow for experiences
 - fix nav bar redirection (scroll down)
 
 Resource:

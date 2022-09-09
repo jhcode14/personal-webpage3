@@ -6,37 +6,49 @@
   flex-direction: column;
   gap: 0.2rem;
 
-  padding: 2.5em 10em;
-}
+  padding: 2.5em 0em;
 
-.Projects_container h1 {
-  color: $color1;
-  font-size: $bg-size-2;
-
-  opacity: $font-opacity;
+  h1 {
+    color: $color1;
+    font-size: $bg-size-2;
+  }
 }
 
 .Project_display {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  column-gap: 3.2rem;
-  row-gap: 0.2rem;
+  column-gap: 0.4rem;
+  row-gap: 0.4rem;
 }
 
 .Project_box {
   background-color: $color3;
   padding: 0.5rem 1.5rem;
-  width: 100%;
+  border-radius: 0.5rem;
+  cursor: pointer;
 
-  transform: background-color 5s;
-}
-
-.Project_box a {
-  color: $bg-color;
-  text-decoration: none;
+  transition: background-color 0.5s;
 }
 
 .Project_box:hover {
   background-color: $color4;
+}
+
+@media only screen and (max-width: 55em) {
+  .Projects_container {
+    h1 {
+      font-size: $size-phone-title;
+    }
+
+    padding-left: $padding-phone;
+    padding-right: $padding-phone;
+  }
+  .Project_display {
+    grid-template-columns: 1fr;
+  }
+
+  .Project_box {
+    width: auto;
+  }
 }

@@ -1,3 +1,4 @@
+import { forwardRef } from "react";
 import styles from "./Projects.module.scss";
 
 const all_data = [
@@ -31,25 +32,30 @@ const all_data = [
   },
 ];
 
-export default function Projects({ ref }) {
+const Projects = forwardRef((props, ref) => {
   return (
     <div className={styles.Projects_container} ref={ref}>
       <h1>Project Highlights</h1>
       <div className={styles.Project_display}>
         {all_data.map((proj) => (
-          <div className={styles.Project_box}>
-            <a href={proj.link}>
-              <h3>{proj.title}</h3>
-              <p>
-                {proj.skills}
-                <br />
-                <br />
-                {proj.context}
-              </p>
-            </a>
+          <div
+            className={styles.Project_box}
+            onClick={() => {
+              window.open(proj.link);
+            }}
+          >
+            <h3>{proj.title}</h3>
+            <p>
+              {proj.skills}
+              <br />
+              <br />
+              {proj.context}
+            </p>
           </div>
         ))}
       </div>
     </div>
   );
-}
+});
+
+export default Projects;
