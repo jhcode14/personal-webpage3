@@ -1,12 +1,10 @@
 Todo:
 
-- Fix css addressed
-- add a scroll down flashing thing
-- color picking
+- Color
 - CSS/Design Improvement
 
 - box shadow for experiences
-- fix nav bar redirection (scroll down)
+- Improve naming convention
 
 Resource:
 
