@@ -15,7 +15,7 @@ const all_data = [
     title_description: "University of California, San Diego",
     time_period: "January 2021 - September 2023",
     context:
-      "Course work: Machine Learning, Modeling and Data Analysis, Advanced Data Structures, and Computer Organization & System Programming.",
+      "Minoring in Computer Science with relevant coursework in Machine Learning, Modeling and Data Analysis, Advanced Data Structures, and Computer Organization & System Programming.",
   },
 ];
 

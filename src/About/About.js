@@ -12,11 +12,12 @@ const About = forwardRef((props, ref) => {
         knowledge.
         <br />
         <br />
-        A detail-oriented, result-driven problem solver who loves constructive
-        feedback and failures where I can learn from my mistakes. Outside of the
-        professional scene, I enjoyed Kendo, photography, and running (looking
-        forward to running a half-marathon soon). I am also a cat lover, and
-        would love to adopt a cat in a near future.
+        A detail-oriented, result-driven person who loves feedback and
+        criticism. I also am not afraid of failing. I believe acknowledging
+        downfalls and learning from mistakes is essential as a team player.
+        Outside of the professional scene, I enjoyed Kendo, photography, and
+        running (looking forward to running a half-marathon soon). I am also a
+        cat lover and would love to adopt a cat soon.
         <br />
         <br />
         Interested in working on ambitious and meaningful projects. My expertise
