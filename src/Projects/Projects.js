@@ -10,6 +10,13 @@ const all_data = [
       "This is a project for the home network. Users will self-host the application locally to track specific stocks and interact with the app through its website and Sonos Home Speaker system.",
   },
   {
+    title: "Bread Clock (Beta)",
+    link: "https://bread-clock.vercel.app/",
+    skills: "React.JS, JS/HTML/CSS, Bread",
+    context:
+      "This is an ongoing project. Check it out to see what it is all about :)",
+  },
+  {
     title: "Jason Hsu's Website",
     link: "https://github.com/jhcode14/personal-webpage3",
     skills: "React.JS, JS/HTML/CSS",
