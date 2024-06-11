@@ -33,7 +33,7 @@ const Skills = forwardRef((props, ref) => {
         ))}
       </div>
       <div className={styles.Resume_box}>
-        <a href="/Jason-Resume-September-2022.pdf" download>
+        <a href="/Jason-Resume-May-2024.pdf" download>
           Download Resume
         </a>
       </div>

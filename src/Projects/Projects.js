@@ -10,13 +10,6 @@ const all_data = [
       "This is a project for the home network. Users will self-host the application locally to track specific stocks and interact with the app through its website and Sonos Home Speaker system.",
   },
   {
-    title: "Bread Clock (In Progress)",
-    link: "",
-    skills: "React.JS, JS/HTML/CSS, Bread",
-    context:
-      "A clock that is also a bread at the same time? How is it possible?",
-  },
-  {
     title: "Jason Hsu's Website",
     link: "https://github.com/jhcode14/personal-webpage3",
     skills: "React.JS, JS/HTML/CSS",
@@ -28,14 +21,14 @@ const all_data = [
     link: "https://github.com/jhcode14/Heart_Disease_ML_Detection",
     skills: "Python, Pandas, Numpy, Sklearn",
     context:
-      "This is the final project of UCSD's COGS 118A Supervised Machine Learning Course. We intend to evaluate a patient's risk of getting heart disease through multiple Machine Learning models.",
+      "This is the final project of UCSD's COGS 118A Supervised Machine Learning Course. We evaluated a patient's risk of getting heart disease through multiple ML models.",
   },
   {
     title: "Type 1 Diabetes Care Directive",
     link: "https://github.com/jhcode14/t1d-fall2021",
     skills: "React.JS, JS/HTML/CSS",
     context:
-      "As a developer of the UC San Diego Diabetes Design Initiative, I worked with teammates to create this React.JS app to create safer and more efficient communication between doctors and Type1 Diabetes patients in an emergency.",
+      "As a developer of the UC San Diego Diabetes Design Initiative, I co-developed React.js app with UCSD Design Lab to streamline critical information sharing for Type 1 diabetics, leading to more informed and safer decisions in urgent situations.",
   },
 ];
 

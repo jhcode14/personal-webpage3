@@ -14,7 +14,7 @@ const all_data = [
     title_description: "Viasat Inc.",
     time_period: "June 2022 - September 2022",
     context:
-      "During the 12 weeks internship, I worked with other engineers to deployed High Availability Multi-Node Kubernetes Cluster.",
+      "During the 12 weeks internship, I worked with other engineers to deploy High Availability Multi-Node Kubernetes Cluster.",
   },
   {
     title: "B.S. Cognitive Science - Machine Learning and Neuro Computation",
