@@ -38,10 +38,12 @@ const Experience = forwardRef((props, ref) => {
       <div className={styles.Experience_grid}>
         <h1>Experiences</h1>
         <div className={styles.Boxes}>
-          {all_data.map((obj) => {
+          {all_data.map((obj, i) => {
             return(<Box
               data={obj}
-              link={"https://www.linkedin.com/in/jason-hsu-ucsd/"}/>)
+              link={"https://www.linkedin.com/in/jason-hsu-ucsd/"}
+              index={i}/>
+            )
           })}
         </div>
       </div>

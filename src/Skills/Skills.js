@@ -10,31 +10,31 @@ const Skills = forwardRef((props, ref) => {
       <h1>Skills</h1>
       <h2>Languages</h2>
       <div className={styles.Skills_list}>
-        {lang.map((item) => (
-          <div className={styles.Skills_box}>
+        {lang.map((item, i) => (
+          <div className={styles.Skills_box} key={i}>
             <h3>{item}</h3>
           </div>
         ))}
       </div>
       <h2>Technologies</h2>
       <div className={styles.Skills_list}>
-        {tech.map((item) => (
-          <div className={styles.Skills_box}>
+        {tech.map((item, i) => (
+          <div className={styles.Skills_box} key={i}>
             <h3>{item}</h3>
           </div>
         ))}
       </div>
       <h2>Methodologies</h2>
       <div className={styles.Skills_list}>
-        {meth.map((item) => (
-          <div className={styles.Skills_box}>
+        {meth.map((item, i) => (
+          <div className={styles.Skills_box} key={i}>
             <h3>{item}</h3>
           </div>
         ))}
       </div>
       <div className={styles.Resume_box}>
-        <a href="/Jason-Resume-Sep-2024-fstk.docx-2.pdf" download>
-          Download Resume
+        <a target="_blank" rel="noopener noreferrer" href="/Jason-Resume-Sep-2024-fstk.docx-2.pdf">
+          View Resume
         </a>
       </div>
     </div>

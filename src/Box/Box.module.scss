@@ -10,7 +10,7 @@
 
   &:hover {
     color: $color3;
-    background-color: lighten($color3, 55%);
+    background-color: $color5;
     cursor: pointer;
   }
 }

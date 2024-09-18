@@ -13,13 +13,14 @@ import styles from "./Box.module.scss";
  *  React component box
  */
 
-export default function Box({ data, link }) {
+export default function Box({ data, link, index }) {
   return (
     <div
       className={styles.Box_container}
       onClick={() => {
         window.open(link);
       }}
+      key={index}
     >
       <h3>{data["title"]}</h3>
       <p>

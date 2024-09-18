@@ -46,19 +46,19 @@ const Header = ({ refs }) => {
         <img src={Catlogo} alt="Logo" width={64} height={64} />
       </div>
       <div className="Nav_content">
-        <NavLink to="/about" activeClassName="selected">
+        <NavLink to="/about" activeclassname="selected">
           About
         </NavLink>
-        <NavLink to="/experience" activeClassName="selected">
+        <NavLink to="/experience" activeclassname="selected">
           Experience
         </NavLink>
-        <NavLink to="/projects" activeClassName="selected">
+        <NavLink to="/projects" activeclassname="selected">
           Projects
         </NavLink>
-        <NavLink to="/skills" activeClassName="selected">
+        <NavLink to="/skills" activeclassname="selected">
           Skills
         </NavLink>
-        <NavLink to="/contact" activeClassName="selected">
+        <NavLink to="/contact" activeclassname="selected">
           Contact Me
         </NavLink>
       </div>
@@ -86,7 +86,7 @@ function App() {
               contactRef,
             }}
           />
-          <Welcome />
+          <Welcome key={1}/>
           <About ref={aboutRef} />
           <Experience ref={experienceRef} />
           <Projects ref={projectsRef} />
