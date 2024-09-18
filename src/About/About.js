@@ -5,12 +5,13 @@ const About = forwardRef((props, ref) => {
   return (
     <div className={styles.About_container} ref={ref}>
       <p>
-        Greetings! I'm a passionate Software Engineer, with a Machine Learning
-        background to build impactful software. I'm proficient in Python,
-        React.JS, Next.JS, and Kubernetes, and thrive in collaborative
-        environments. When I'm not coding, I enjoy exploring the world of
-        bouldering, photography, and running and a cat lover. If you share
-        similar interest, let's connect!
+      Greetings! I am a Software Engineer who thrives in dynamic and 
+      collaborative environments. I am highly motivated to learn and 
+      contribute to innovative projects that create a positive impact. 
+      With a strong work ethic and a passion for continuous improvement, 
+      I strive to deliver high-quality results. Outside of coding, I enjoy 
+      staying active, photography, and sake tasting. If you share similar 
+      interests, let’s connect!
       </p>
     </div>
   );

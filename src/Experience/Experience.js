@@ -14,14 +14,21 @@ const all_data = [
     title_description: "Viasat Inc.",
     time_period: "June 2022 - September 2022",
     context:
-      "During the 12 weeks internship, I worked with other engineers to deploy High Availability Multi-Node Kubernetes Cluster.",
+      "Docker, Kubernetes, ArgoCD, Github Actions, and CI/CD",
+  },
+  {
+    title: "Software Developer",
+    title_description: "Diabetes Design Initiative | UCSD Design Lab",
+    time_period: "September 2021 - March 2022",
+    context:
+      "React.JS, Figma",
   },
   {
     title: "B.S. Cognitive Science - Machine Learning and Neuro Computation",
     title_description: "University of California, San Diego",
     time_period: "January 2021 - March 2023",
     context:
-      "Minoring in Computer Science with relevant coursework in Machine Learning, Modeling and Data Analysis, Advanced Data Structures, and Computer Organization & System Programming.",
+      "ML + Minor in CS",
   },
 ];
 
@@ -31,18 +38,11 @@ const Experience = forwardRef((props, ref) => {
       <div className={styles.Experience_grid}>
         <h1>Experiences</h1>
         <div className={styles.Boxes}>
-          <Box
-            data={all_data[0]}
-            link={"https://www.linkedin.com/in/jason-hsu-ucsd/"}
-          />
-          <Box
-            data={all_data[1]}
-            link={"https://www.linkedin.com/in/jason-hsu-ucsd/"}
-          />
-          <Box
-            data={all_data[2]}
-            link={"https://www.linkedin.com/in/jason-hsu-ucsd/"}
-          />
+          {all_data.map((obj) => {
+            return(<Box
+              data={obj}
+              link={"https://www.linkedin.com/in/jason-hsu-ucsd/"}/>)
+          })}
         </div>
       </div>
     </div>

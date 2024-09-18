@@ -7,14 +7,14 @@ export default function Icons() {
   return (
     <div className={styles.icons}>
       <a
-        href="https://www.instagram.com/jhsu_14/"
+        href="https://www.instagram.com/jsonh14/"
         rel="noreferrer"
         target="_blank"
       >
         <img src={Instagram} alt="instagram" />
       </a>
       <a
-        href="https://www.linkedin.com/in/jason-hsu-ucsd/"
+        href="https://www.linkedin.com/in/jasonhsu14"
         rel="noreferrer"
         target="_blank"
       >

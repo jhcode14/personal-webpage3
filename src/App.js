@@ -1,7 +1,7 @@
 import "./App.scss";
 import Catlogo from "./Img/catcon.png";
 
-import React, { forwardRef, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { HashRouter, NavLink, useLocation } from "react-router-dom";
 
 import Welcome from "./Welcome/Welcome";

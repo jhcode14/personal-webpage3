@@ -3,9 +3,9 @@ import styles from "./Projects.module.scss";
 
 const all_data = [
   {
-    title: "Rocket Tracker (In Progress)",
-    link: "",
-    skills: "Next.JS, MongoDB, JS/HTML/CSS, Docker, Kubernetes",
+    title: "Manga Tracker (In Progress)",
+    link: "https://github.com/jhcode14/manga-tracker",
+    skills: "Python, PostgreSQL, Docker",
     context:
       "This is a project for the home network. Users will self-host the application locally to track specific stocks and interact with the app through its website and Sonos Home Speaker system.",
   },
@@ -24,11 +24,11 @@ const all_data = [
       "This is the final project of UCSD's COGS 118A Supervised Machine Learning Course. We evaluated a patient's risk of getting heart disease through multiple ML models.",
   },
   {
-    title: "Type 1 Diabetes Care Directive",
-    link: "https://github.com/jhcode14/t1d-fall2021",
+    title: "ASL Sign Language Clustering",
+    link: "https://github.com/jhcode14/ASL_sign_language_clustering",
     skills: "React.JS, JS/HTML/CSS",
     context:
-      "As a developer of the UC San Diego Diabetes Design Initiative, I co-developed React.js app with UCSD Design Lab to streamline critical information sharing for Type 1 diabetics, leading to more informed and safer decisions in urgent situations.",
+      "This is a group project that utilized PCA and K-Means Clustering to cluster ASL Sign Language.",
   },
 ];
 
