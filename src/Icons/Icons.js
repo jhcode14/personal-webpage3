@@ -1,4 +1,4 @@
-import styles from "./Icons.module.css";
+import styles from "./Icons.module.scss";
 import Instagram from "../Img/instagram.svg";
 import Linkedin from "../Img/linkedin.svg";
 import Github from "../Img/github.svg";

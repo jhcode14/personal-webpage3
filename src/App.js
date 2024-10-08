@@ -9,7 +9,6 @@ import About from "./About/About";
 import Experience from "./Experience/Experience";
 import Projects from "./Projects/Projects";
 import Skills from "./Skills/Skills";
-import Contact from "./Contact/Contact";
 
 const Header = ({ refs }) => {
   const location = useLocation();
@@ -28,9 +27,6 @@ const Header = ({ refs }) => {
         break;
       case "/skills":
         scrollHandler(refs.skillsRef);
-        break;
-      case "/contact":
-        scrollHandler(refs.contactRef);
         break;
       default:
         return;
@@ -58,9 +54,6 @@ const Header = ({ refs }) => {
         <NavLink to="/skills" activeclassname="selected">
           Skills
         </NavLink>
-        <NavLink to="/contact" activeclassname="selected">
-          Contact Me
-        </NavLink>
       </div>
     </div>
   );
@@ -71,7 +64,6 @@ function App() {
   const experienceRef = useRef(null);
   const projectsRef = useRef(null);
   const skillsRef = useRef(null);
-  const contactRef = useRef(null);
 
   return (
     <div className="App">
@@ -83,7 +75,6 @@ function App() {
               experienceRef,
               projectsRef,
               skillsRef,
-              contactRef,
             }}
           />
           <Welcome key={1}/>
@@ -91,7 +82,6 @@ function App() {
           <Experience ref={experienceRef} />
           <Projects ref={projectsRef} />
           <Skills ref={skillsRef} />
-          <Contact ref={contactRef} />
         </HashRouter>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import { forwardRef } from "react";
 import styles from "./Skills.module.scss";
-const lang = ["Python", "JavaScript", "HTML", "CSS", "Java"];
-const tech = ["PostgreSQL", "Flask", "Docker", "Kubernetes", "React.JS", "Next.JS", "Linux", "Git"];
+const lang = ["Python", "Java", "JavaScript", "TypeScript"];
+const tech = ["React.JS", "Next.JS", "PostgreSQL", "Flask", "Spring", "Docker", "K8s", "RabbitMQ"];
 const meth = ["Agile", "Scrum"];
 
 const Skills = forwardRef((props, ref) => {
