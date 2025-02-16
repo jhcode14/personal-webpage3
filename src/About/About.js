@@ -5,13 +5,11 @@ const About = forwardRef((props, ref) => {
   return (
     <div className={styles.About_container} ref={ref}>
       <p>
-      Greetings! I am a Software Engineer who thrives in dynamic and 
-      collaborative environments. I am highly motivated to learn and 
-      contribute to innovative projects that create a positive impact. 
-      With a strong work ethic and a passion for continuous improvement, 
-      I strive to deliver high-quality results. Outside of coding, I enjoy 
-      staying active, photography, and sake tasting. If you share similar 
-      interests, let’s connect!
+        Hi! I’m a Software Engineer based in SF. I enjoy tackling challenges and
+        contributing to innovative, impactful projects in collaborative
+        settings. Outside of coding, I’m passionate about staying active,
+        exploring local restaurants, and creating ceramics. I’d love to connect
+        with others who share these interests!
       </p>
     </div>
   );

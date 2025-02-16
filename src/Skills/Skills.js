@@ -1,7 +1,16 @@
 import { forwardRef } from "react";
 import styles from "./Skills.module.scss";
 const lang = ["Python", "Java", "JavaScript", "TypeScript"];
-const tech = ["React.JS", "Next.JS", "PostgreSQL", "Flask", "Spring", "Docker", "K8s", "RabbitMQ"];
+const tech = [
+  "React.JS",
+  "Next.JS",
+  "PostgreSQL",
+  "Flask",
+  "Spring",
+  "Docker",
+  "K8s",
+  "RabbitMQ",
+];
 const meth = ["Agile", "Scrum"];
 
 const Skills = forwardRef((props, ref) => {
@@ -33,7 +42,11 @@ const Skills = forwardRef((props, ref) => {
         ))}
       </div>
       <div className={styles.Resume_box}>
-        <a target="_blank" rel="noopener noreferrer" href="/Jason-Resume-Sep-2024-fstk.docx-2.pdf">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="/Jason-Hsu-Resume.pdf"
+        >
           View Resume
         </a>
       </div>

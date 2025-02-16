@@ -22,16 +22,15 @@ export default function Box({ data, link, index }) {
       }}
       key={index}
     >
-      <h3>{data["title"]}</h3>
-      <p>
+      <div className={styles.Box_title}>{data["title"]}</div>
+      <div className={styles.Box_description}>
         {data["title_description"]}
         <br />
         {data["time_period"]}
         <br />
         <br />
         {data["context"]}
-      </p>
-      <p></p>
+      </div>
     </div>
   );
 }

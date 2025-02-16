@@ -2,7 +2,7 @@
 
 .Box_container {
   background-color: $color3;
-  padding: 0.5rem 1.5rem;
+  padding: 1.3rem 1.5rem;
 
   border-radius: 0.5rem;
   border: 2px solid transparent;
@@ -13,4 +13,15 @@
     background-color: $color5;
     cursor: pointer;
   }
+}
+
+.Box_title {
+  font-size: $size-3;
+  font-weight: 510;
+  margin-bottom: 0.2rem;
+}
+
+
+.Box_description {
+  font-size: $size-5;
 }

@@ -3,18 +3,17 @@ import styles from "./Projects.module.scss";
 
 const all_data = [
   {
-    title: "Manga Tracker (In Progress)",
+    title: "Manga Tracker",
     link: "https://github.com/jhcode14/manga-tracker",
-    skills: "Python, PostgreSQL, Docker",
-    context:
-      "This is a project for the home network. Users will self-host the application locally to track specific stocks and interact with the app through its website and Sonos Home Speaker system.",
+    skills: "Python, React+Vite, PostgreSQL, Docker",
+    context: "Self-hosted manga tracker with a web interface!",
   },
   {
-    title: "Jason Hsu's Website",
+    title: "This Website",
     link: "https://github.com/jhcode14/personal-webpage3",
     skills: "React.JS, JS/HTML/CSS",
     context:
-      "This project is the website you are viewing right now. This website is the third and latest version, intended to feature some of my proud works.",
+      "You are looking at it right now! Fun Fact: This is the third and latest version of my personal website.",
   },
   {
     title: "Heart Disease Detection",
@@ -44,13 +43,13 @@ const Projects = forwardRef((props, ref) => {
               window.open(proj.link);
             }}
           >
-            <h3>{proj.title}</h3>
-            <p>
+            <div className={styles.Project_title}>{proj.title}</div>
+            <div className={styles.Project_skills}>
               {proj.skills}
               <br />
               <br />
               {proj.context}
-            </p>
+            </div>
           </div>
         ))}
       </div>
