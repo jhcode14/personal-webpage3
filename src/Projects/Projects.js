@@ -11,9 +11,9 @@ const all_data = [
   {
     title: "This Website",
     link: "https://github.com/jhcode14/personal-webpage3",
-    skills: "React.JS, JS/HTML/CSS",
+    skills: "React",
     context:
-      "You are looking at it right now! Fun Fact: This is the third and latest version of my personal website.",
+      "You are looking at it right now! Hosted on Vercel. Fun Fact: This is the third and latest version of my personal website.",
   },
   {
     title: "Heart Disease Detection",
@@ -25,7 +25,7 @@ const all_data = [
   {
     title: "ASL Sign Language Clustering",
     link: "https://github.com/jhcode14/ASL_sign_language_clustering",
-    skills: "React.JS, JS/HTML/CSS",
+    skills: "React",
     context:
       "This is a group project that utilized PCA and K-Means Clustering to cluster ASL Sign Language.",
   },

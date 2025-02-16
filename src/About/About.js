@@ -9,7 +9,7 @@ const About = forwardRef((props, ref) => {
         contributing to innovative, impactful projects in collaborative
         settings. Outside of coding, I’m passionate about staying active,
         exploring local restaurants, and creating ceramics. I’d love to connect
-        with others who share these interests!
+        with others who share similar interests!
       </p>
     </div>
   );
