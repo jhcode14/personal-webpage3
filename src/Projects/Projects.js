@@ -25,7 +25,7 @@ const all_data = [
   {
     title: "ASL Sign Language Clustering",
     link: "https://github.com/jhcode14/ASL_sign_language_clustering",
-    skills: "React",
+    skills: "Python, Pandas, Numpy, Sklearn",
     context:
       "This is a group project that utilized PCA and K-Means Clustering to cluster ASL Sign Language.",
   },

@@ -8,7 +8,7 @@ const all_data = [
     title_description: "Viasat Inc.",
     time_period: "July 2023 - Present",
     context:
-      "Java Spring, React.JS, Python, Elasticsearch, Redis, RabbitMQ, and more",
+      "Java Spring, React, Python, Elasticsearch, Redis, RabbitMQ, and more",
   },
   {
     title: "Software Engineering Intern",
@@ -20,7 +20,7 @@ const all_data = [
     title: "Student Software Developer",
     title_description: "Diabetes Design Initiative | UCSD Design Lab",
     time_period: "September 2021 - March 2022",
-    context: "React.JS, Figma",
+    context: "React, Figma",
   },
   {
     title: "B.S. Cognitive Science - ML",
