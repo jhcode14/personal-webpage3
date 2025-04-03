@@ -3,8 +3,8 @@ import styles from "./Projects.module.scss";
 
 const all_data = [
   {
-    title: "Manga Tracker",
-    link: "https://github.com/jhcode14/manga-tracker",
+    title: "Tamago",
+    link: "https://github.com/jhcode14/tamago",
     skills: "Python, React+Vite, PostgreSQL, Docker",
     context: "Self-hosted manga tracker with a web interface!",
   },
