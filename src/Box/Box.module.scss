@@ -1,7 +1,7 @@
-@import "../theme.scss";
+@use "../theme.scss";
 
 .Box_container {
-  background-color: $color3;
+  background-color: theme.$color3;
   padding: 1.3rem 1.5rem;
 
   border-radius: 0.5rem;
@@ -9,19 +9,19 @@
   transition: background-color 0.3s;
 
   &:hover {
-    color: $color3;
-    background-color: $color5;
+    color: theme.$color3;
+    background-color: theme.$color5;
     cursor: pointer;
   }
 }
 
 .Box_title {
-  font-size: $size-3;
+  font-size: theme.$size-3;
   font-weight: 510;
   margin-bottom: 0.2rem;
 }
 
 
 .Box_description {
-  font-size: $size-5;
+  font-size: theme.$size-5;
 }

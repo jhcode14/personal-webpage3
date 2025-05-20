@@ -1,7 +1,7 @@
-@import "../theme.scss";
+@use "../theme.scss";
 
 .Intro_container {
-  background-color: $bg-color;
+  background-color: theme.$bg-color;
 
   display: flex;
   flex-direction: row;
@@ -9,13 +9,13 @@
 }
 
 .Intro {
-  color: $color1;
+  color: theme.$color1;
   align-items: left;
 
   h1 {
-    color: $color1;
-    font-family: $font;
-    font-size: $size-1;
+    color: theme.$color1;
+    font-family: theme.$font;
+    font-size: theme.$size-1;
 
     // animations
     animation: fadeIn ease 3s;
@@ -26,9 +26,9 @@
   }
 
   h2 {
-    color: $color1;
-    font-family: $font;
-    font-size: $size-2;
+    color: theme.$color1;
+    font-family: theme.$font;
+    font-size: theme.$size-2;
 
     // animations
     animation: fadeIn ease 2s;
@@ -39,9 +39,9 @@
   }
 
   h3 {
-    color: $color1;
-    font-family: $font;
-    font-size: $size-3;
+    color: theme.$color1;
+    font-family: theme.$font;
+    font-size: theme.$size-3;
 
     // animations
     animation: fadeIn ease 4s;
@@ -52,9 +52,9 @@
   }
 
   h4 {
-    color: $color1;
-    font-family: $font;
-    font-size: $size-3;
+    color: theme.$color1;
+    font-family: theme.$font;
+    font-size: theme.$size-3;
 
     // animations
     animation: fadeIn ease 5s;
@@ -96,8 +96,8 @@
 
 @media only screen and (max-width: 55em) {
   .Intro_container {
-    padding-left: $padding-phone;
-    padding-right: $padding-phone;
+    padding-left: theme.$padding-phone;
+    padding-right: theme.$padding-phone;
     padding-bottom: 1rem;
 
     background-image: url(../Img/kendo_profile_clear.png);

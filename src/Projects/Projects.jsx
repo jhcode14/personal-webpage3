@@ -3,6 +3,12 @@ import styles from "./Projects.module.scss";
 
 const all_data = [
   {
+    title: "Manga Image Translator",
+    link: "https://github.com/zyddnys/manga-image-translator",
+    skills: "Open Source Contribution, React, Python",
+    context: "Manga translation software with OCR + LLM!",
+  },
+  {
     title: "Tamago",
     link: "https://github.com/jhcode14/tamago",
     skills: "Python, React+Vite, PostgreSQL, Docker",
@@ -12,22 +18,14 @@ const all_data = [
     title: "This Website",
     link: "https://github.com/jhcode14/personal-webpage3",
     skills: "React",
-    context:
-      "You are looking at it right now! Hosted on Vercel. Fun Fact: This is the third and latest version of my personal website.",
+    context: "You are looking at it right now! Hosted on Vercel.",
   },
   {
     title: "Heart Disease Detection",
     link: "https://github.com/jhcode14/Heart_Disease_ML_Detection",
     skills: "Python, Pandas, Numpy, Sklearn",
     context:
-      "This is the final project of UCSD's COGS 118A Supervised Machine Learning Course. We evaluated a patient's risk of getting heart disease through multiple ML models.",
-  },
-  {
-    title: "ASL Sign Language Clustering",
-    link: "https://github.com/jhcode14/ASL_sign_language_clustering",
-    skills: "Python, Pandas, Numpy, Sklearn",
-    context:
-      "This is a group project that utilized PCA and K-Means Clustering to cluster ASL Sign Language.",
+      "Part of the UCSD Supervised Machine Learning Course. We evaluated a patient's risk of getting heart disease through multiple ML models.",
   },
 ];
 

@@ -1,9 +1,9 @@
-@import "../theme.scss";
+@use "../theme.scss";
 
 .Contact_container {
   h1 {
-    color: $color1;
-    font-size: $size-2;
+    color: theme.$color1;
+    font-size: theme.$size-2;
   }
 }
 
