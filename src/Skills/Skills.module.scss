@@ -1,4 +1,5 @@
-@import "../theme.scss";
+@use 'sass:color';
+@use "../theme.scss";
 
 .Skills_container {
   padding: 2.5em 10em;
@@ -6,14 +7,14 @@
   margin-right: -10rem;
 
   h1 {
-    color: $color1;
-    font-size: $bg-size-2;
+    color: theme.$color1;
+    font-size: theme.$bg-size-2;
     margin: 0;
   }
 
   h2 {
-    color: $color2;
-    font-size: $size-3;
+    color: theme.$color2;
+    font-size: theme.$size-3;
 
     text-align: right;
   }
@@ -30,8 +31,8 @@
 }
 
 .Skills_box h3 {
-  color: $color1;
-  background-color: $bg-color;
+  color: theme.$color1;
+  background-color: theme.$bg-color;
 
   border-radius: 0.5rem;
   border: 1.5px solid #a4b1cd;
@@ -42,8 +43,8 @@
   transition: background-color 0.3s;
 
   &:hover {
-    color: $bg-color;
-    background-color: lighten($color3, 10%);
+    color: theme.$bg-color;
+    background-color: color.scale($color: theme.$color3, $lightness: 10%);
     transform: translateY(-1px);
   }
 }
@@ -57,18 +58,18 @@
     padding: 0.9rem 1.7rem;
     text-align: center;
     text-decoration: none;
-    font-size: $size-3;
+    font-size: theme.$size-3;
     font-weight: 510;
 
-    color: $color1;
-    background-color: $bg-color;
+    color: theme.$color1;
+    background-color: theme.$bg-color;
     border-radius: 0.7rem;
     border: 1.5px solid #a4b1cd;
 
     cursor: pointer;
 
     &:hover {
-      background-color: $color4;
+      background-color: theme.$color4;
       color: white;
     }
   }
@@ -78,11 +79,11 @@
   .Skills_container {
     margin-left: 0rem;
     margin-right: 0rem;
-    padding-left: $padding-phone;
-    padding-right: $padding-phone;
+    padding-left: theme.$padding-phone;
+    padding-right: theme.$padding-phone;
 
     h1 {
-      font-size: $size-phone-title;
+      font-size: theme.$size-phone-title;
     }
   }
 }

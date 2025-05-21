@@ -8,8 +8,8 @@ const About = forwardRef((props, ref) => {
         Hi! I’m a Software Engineer based in SF. I enjoy tackling challenges and
         contributing to innovative, impactful projects in collaborative
         settings. Outside of coding, I’m passionate about staying active,
-        exploring local restaurants, and creating ceramics. I’d love to connect
-        with others who share similar interests!
+        exploring local restaurants, and making ceramics. Feel free to reach
+        out!
       </p>
     </div>
   );

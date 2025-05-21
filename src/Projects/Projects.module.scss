@@ -1,7 +1,7 @@
-@import "../theme.scss";
+@use "../theme.scss";
 
 .Projects_container {
-  color: $bg-color;
+  color: theme.$bg-color;
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
@@ -9,8 +9,8 @@
   padding: 2.5em 0em;
 
   h1 {
-    color: $color1;
-    font-size: $bg-size-2;
+    color: theme.$color1;
+    font-size: theme.$bg-size-2;
   }
 }
 
@@ -23,7 +23,7 @@
 }
 
 .Project_box {
-  background-color: $color3;
+  background-color: theme.$color3;
   padding: 1.3rem 1.5rem;
   border-radius: 0.5rem;
   cursor: pointer;
@@ -32,29 +32,29 @@
 }
 
 .Project_box:hover {
-  color: $color3;
-  background-color: $color5;
+  color: theme.$color3;
+  background-color: theme.$color5;
 }
 
 .Project_title {
-  font-size: $size-3;
+  font-size: theme.$size-3;
   font-weight: 510;
   margin-bottom: 0.2rem;
 }
 
 .Project_skills {
-  font-size: $size-5;
+  font-size: theme.$size-5;
 }
 
 
 @media only screen and (max-width: 55em) {
   .Projects_container {
     h1 {
-      font-size: $size-phone-title;
+      font-size: theme.$size-phone-title;
     }
 
-    padding-left: $padding-phone;
-    padding-right: $padding-phone;
+    padding-left: theme.$padding-phone;
+    padding-right: theme.$padding-phone;
   }
   .Project_display {
     grid-template-columns: 1fr;
