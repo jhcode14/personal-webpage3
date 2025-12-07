@@ -4,9 +4,15 @@ import Box from "../Box/Box";
 
 const all_data = [
   {
+    title: "Software Engineer",
+    title_description: "Digital Ocean",
+    time_period: "September 2025 - Present",
+    context: "DBaaS",
+  },
+  {
     title: "Full Stack Software Engineer",
     title_description: "Viasat Inc.",
-    time_period: "July 2023 - Present",
+    time_period: "July 2023 - August 2025",
     context:
       "Java Spring, React, Python, Elasticsearch, Redis, RabbitMQ, and more",
   },
