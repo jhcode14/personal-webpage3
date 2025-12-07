@@ -5,11 +5,9 @@ const About = forwardRef((props, ref) => {
   return (
     <div className={styles.About_container} ref={ref}>
       <p>
-        Hi! I’m a Software Engineer based in SF. I enjoy tackling challenges and
-        contributing to innovative, impactful projects in collaborative
-        settings. Outside of coding, I’m passionate about staying active,
-        exploring local restaurants, and making ceramics. Feel free to reach
-        out!
+        Hi! I’m a Software Engineer based in SF. I enjoy learning and building
+        things that matter. Outside of coding, I’m passionate about staying
+        active and creating ceramics. Feel free to reach out!
       </p>
     </div>
   );
